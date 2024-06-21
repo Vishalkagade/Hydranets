@@ -1,13 +1,15 @@
 # Implementing Hydranets using pytorch
 We will try to implement [Real-Time Joint Semantic Segmentation and Depth Estimation Using Asymmetric Annotations](https://arxiv.org/pdf/1809.04766.pdf)
 
-<img width="1077" alt="image" src="https://github.com/Vishalkagade/Hydranets/assets/105672962/3b01520e-3b87-4a3a-9cfa-569afcc0a281">
-
-
-  
+<div style="display: flex; align-items: flex-start;">
+  <img src="https://github.com/Vishalkagade/Hydranets/assets/105672962/de499153-3a4e-4b5e-b5cf-8652dfa78ba1" width="500" alt="Hydranets Video">
+</div>
 
 The paper proposes a multitasking algorithm for detecting the 3 different head which will learn the featured from shared backbone.The model outputs depth, segmentation and normals map.
 The mobilenet architecture is used as encoder and ligh weight refine net is used as decoder with speacial CRP block skip connections.
+<div style="display: flex; justify-content: center;">
+  <img src="https://github.com/Vishalkagade/Hydranets/assets/105672962/3b01520e-3b87-4a3a-9cfa-569afcc0a281" width="700" alt="Hydranets">
+</div>
 ### Let's dive into it
 
 Before staring to implement its is very necessary to understand which task should be learned with which task so we will have highest benifit.According to reasearch if any task learned 
